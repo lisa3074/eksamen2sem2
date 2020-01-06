@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="The White Album har lagt en masse billeder ind, så du kan få den helt nærværende og varme oplevelse af hvem de er, selvom de måske ikke spiller live i nærheden af dig lige nu. Her kan du bl.a se PR-billeder, live-billeder.">
+    <meta name="keywords" content="band, musik, folk, rock, the white album, singer songwriter, nærvær, hyggelig, danske mandlige sangere, live, unplugged, koncert">
+    <meta name="og:image" content="https://lisabianca.dk/eksamen/billeder/Squid_Alpha_farve_mobil.png" />
+    <meta name="designer" content="Lisa Bianca Henning Søndergaard | ima@frontnd.ninja">
+
+    <meta name="robots" content="noindex">
+
+    <title>THE WHITE ALBUM || BILLEDER</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mukta:400|Prompt:100,300,500,600&display=swap" rel="stylesheet">
+</head>
+
+<body class="billede">
+    <div class="lille_body">
+        <!--- Template til billeder-->
+        <template class="billedeframe">
+            <img src="" class="gallery" alt="">
+        </template>
+        <template>
+            <article class="img_container">
+                <img src="" alt="">
+            </article>
+        </template>
+        <header>
+            <nav class="nav">
+                <div class="nav_wrapper">
+                    <a href="index.html">
+                        <div class="logo">
+                            <h1 class="logo_tekst">TheWhiteAlbum</h1>
+                        </div>
+                    </a>
+                    <div class="desk_menu_wrap">
+                        <a href="koncerter.html">
+                            <div class="menupunkt konc">
+                                <p class="hov">KONCERTER</p>
+                            </div>
+                        </a>
+
+                        <a href="udgivelser.html">
+                            <div class="menupunkt udg">
+                                <p class="hov">UDGIVELSER</p>
+                            </div>
+                        </a>
+
+                        <a href="biografi.html">
+                            <div class="menupunkt bio">
+                                <p class="hov">BIOGRAFI</p>
+                            </div>
+                        </a>
+
+                        <div class="menupunkt drop media">
+                            <p class="hov valgt">GALLERI</p>
+                            <div class="drop_down hide">
+
+                                <a href="videoer.html">
+                                    <div class="videoer drop2">
+                                        <p class="hov">VIDEOER</p>
+                                    </div>
+                                </a>
+                                <a href="billeder.html">
+                                    <div class="billeder drop2">
+                                        <p class="hov">BILLEDER</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="https://thewhitealbum.bigcartel.com" target="_blank" rel="noreferrer">
+                            <div class="menupunkt shop">
+                                <p class="hov">WEBSHOP</p>
+                            </div>
+                        </a>
+                        <a href="kontakt.html">
+                            <div class="menupunkt kont">
+                                <p class="hov">KONTAKT</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--- BURGERMENU -->
+                <nav class="burgermenu">
+                    <h1 class="overskrift">BILLEDER</h1>
+                    <div class="burgerikon">
+                        <img id="menuknap" class="menuknap" alt="Menuknap" src="billeder/burgermenu.svg">
+                        <img id="menuknap1" class="menuknap1" alt="Menuknap" src="billeder/burgerdel1.svg">
+                        <img id="menuknap2" class="menuknap2" alt="Menuknap" src="billeder/burgerdel2.svg">
+                    </div>
+                    <div class="burger hide">
+                        <img src="billeder/home-outline-icon.png" alt="Hjem-ikon" class="hjem">
+                        <ul>
+
+                            <li class="burgerpunkt koncert_knap"><a href="koncerter.html">KONCERTER</a></li>
+
+
+                            <li class="burgerpunkt"><a href="udgivelser.html">UDGIVELSER</a></li>
+
+
+                            <li class="burgerpunkt"><a href="biografi.html">BIOGRAFI</a></li>
+
+
+                            <li class="burgerpunkt"><a href="videoer.html">VIDEOER</a></li>
+
+
+                            <li class="burgerpunkt"><a href="billeder.html">BILLEDER</a></li>
+
+
+                            <li class="burgerpunkt"><a href="https://thewhitealbum.bigcartel.com/" target="_blank" rel="noreferrer">WEBSHOP</a></li>
+
+
+                            <li class="burgerpunkt"><a href="kontakt.html">KONTAKT</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </nav>
+        </header>
+        <div class="content">
+            <section>
+
+                <!-- DROP-SORTERING -->
+                <h1 class="sort valgt_kategori">BILLEDER</h1>
+                <nav class="dropD">
+                    <div>
+                        <select class="drop_ned">
+                            <option value="Promo" class="filter">Promobilleder &nbsp;▾</option>
+                            <option value="Live" class="filter">Livebilleder &nbsp;▾</option>
+                            <option value="Andet" class="filter">Andre billeder &nbsp;▾</option>
+                        </select>
+                    </div>
+                </nav>
+
+                <div class="billed_sorter">
+                    <div class="billedstoerrelse">
+                        <img class="lille hide" src="billeder/ikoner/shrink_icon.svg" alt="" title="Klik for mindre billeder">
+                        <img class="stor" src="billeder/ikoner/expand.svg" alt="" title="Klik for større billeder">
+                    </div>
+                </div>
+
+                <form class="video_sortering">
+                    <label class="radio-inline nr1">
+                        <input type="radio" name="kategori" value="Promo" checked>Pr-billeder &nbsp;&nbsp;
+                    </label>
+                    <label class="radio-inline nr2">
+                        <input type="radio" name="kategori" value="Live">Live-billeder
+                    </label>
+                    <label class="radio-inline nr3">
+                        <input type="radio" name="kategori" value="Andet">Andre billeder
+                    </label>
+                </form>
+                <section id="billede_liste" class="grid_lille">
+
+                </section>
+                <!--<section class="popup_billede hide">
+                    <p class="kryds">✕</p>
+                    <img src="" class="stort_billede" alt="">
+                </section>-->
+                <section class="popup_billede hide">
+                    <p class="kryds">✕</p>
+
+                    <!--Her starter karrusellens HTML    -->
+                    <section class="carousel">
+                        <div class="bwd">
+                            <p>&lt;</p>
+                        </div>
+                        <!--pics contaioneren med overflw: hidden så vi kun ser et billede ad gangen            -->
+                        <div class="pics_container">
+                            <div class="pics">
+                                <!-- her bliver vores klonede template med billederne i sat ind-->
+                            </div>
+                        </div>
+                        <div class="fwd">
+                            <p>&gt;</p>
+                        </div>
+                    </section>
+
+                </section>
+            </section>
+        </div>
+
+        <!--- FOOTER -->
+        <footer>
+            <div class="social">
+                <div class="samle">
+
+                    <a href="https://www.youtube.com/channel/UC2Wul42bR3I3tHBuU-CVxlg" target="_blank" rel="noreferrer" title="YouTube">
+                        <img src="billeder/ikoner/youtube.png" alt="social" class="icon"></a>
+
+                    <a href="https://www.facebook.com/thewhitealbummusic" target="_blank" rel="noreferrer" title="Facebook">
+                        <img src="billeder/ikoner/fb.png" alt="social" class="icon"></a>
+
+                    <a href="https://www.instagram.com/thewhitealbummusic/" target="_blank" rel="noreferrer" title="Instagram">
+                        <img src="billeder/ikoner/instagram.png" alt="social" class="icon"></a>
+                </div>
+                <div class="samle">
+                    <a href="https://open.spotify.com/artist/5JhaDdCfVwK1YJciYM7s6i" target="_blank" rel="noreferrer" title="Spotify">
+                        <img src="billeder/ikoner/spotify.png" alt="social" class="icon"></a>
+
+                    <a href="https://music.apple.com/dk/artist/the-white-album/556251451?l=da" target="_blank" rel="noreferrer" title="Apple Music">
+                        <img src="billeder/ikoner/apple_music.jpeg" alt="social" class="icon"></a>
+
+                    <a href="https://www.bandsintown.com/a/164526-the-white-album" target="_blank" rel="noreferrer" title="BandsInTown">
+                        <img src="billeder/ikoner/bandsintown.png" alt="social" class="icon"></a>
+                </div>
+            </div>
+            <p class="footertext">© The White Album 2020</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
